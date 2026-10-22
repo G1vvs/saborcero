@@ -1,0 +1,33 @@
+# Saborcero, app web para iPhone (PWA)
+
+## Probar en tu computador
+1. Instala Node.js (versión LTS) desde nodejs.org.
+2. Abre una terminal en esta carpeta y ejecuta:
+   npx serve .
+3. Abre la dirección que aparece (por ejemplo http://localhost:3000).
+
+## Publicarla gratis con link propio (Netlify, sin programar)
+1. Entra a https://app.netlify.com/drop
+2. Arrastra esta carpeta completa a la página.
+3. Te entrega un link tipo https://saborcero-xxxx.netlify.app
+
+También funciona en Vercel (vercel.com) subiendo la carpeta o conectando un repositorio de GitHub.
+
+## Instalarla en el iPhone
+1. Abre el link en Safari.
+2. Toca Compartir y luego "Agregar a pantalla de inicio".
+3. Aparece el ícono de Saborcero y se abre a pantalla completa.
+
+Notificaciones del sistema: con la app instalada (iOS 16.4 o superior), abre Avisos (la campana)
+y toca "Activar avisos del iPhone". Los avisos simulados llegarán como notificaciones reales
+cuando la app esté en segundo plano.
+
+## Archivos
+- index.html: toda la app (pantallas, estado global, simulación de avisos).
+- manifest.webmanifest: nombre, colores e íconos para instalarla.
+- sw.js: guarda la app para que abra rápido y sin señal, y muestra las notificaciones.
+- icons/: ícono de la app.
+
+Los datos de la demo se guardan solo en el teléfono de cada persona. Para que los vecinos vean
+las publicaciones de otros en tiempo real, el siguiente paso es conectar una base de datos
+(por ejemplo Supabase o Firebase).
